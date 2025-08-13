@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lorretta's Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            img {width: 100%}
+            video {width: 100%}
+            audio {width: 100%}
+            .container img {
+                border-radius: 10px;
+            }
+            h1 {
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+            }
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                border-radius: 10px;
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            :root {
+                --lavender-100:#f6f4ff;
+                --lavender-200:#efe9ff;
+                --lavender-300:#e2d8ff;
+                --lavender-500:#41289c;
+                --ink:#2a2a34;
+                --card:#ffffff;
+                --ring:rgba(165, 139, 255, .3);
+                --radius: 18px;
+                --shadow: 0 10px 24px rgba(42, 42, 52, .12);
+            }
+            *{ box-sizing: border-box; }
+            html, body {
+                height: 100%;
+            }
+            body {
+                color: var(--ink);
+                background-color: /*var(--lavender-200)*/ #f3edff;
+                font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                padding: 48px 20px;
+            }
+            main {
+                max-width: 1050px;
+                margin: 0 auto;
+            }
+            footer {
+                max-width: 1050px;
+                margin: 8px auto 0;
+                padding: 8px 4px 0;
+                color: #4b4b55;
+            }
+            header {
+                max-width: 1050px;
+                margin: 8px auto 0;
+                padding: 8px 4px 0;
+                color: #4b4b55;
+            }
+            h1 {
+                margin: 0 auto 10px auto;
+                padding: 10px 14px;
+                /*border-radius: 12px;
+                border: 2px solid var(--lavender-500);
+                display: inline-block;*/
+                border: none;
+                font-weight: 600;
+                letter-spacing: .2px;
+            }
+            .center {
+                text-align: center;
+            }
+            p {
+                line-height: 1.7;
+                margin: 10px 0 16px 0;
+            }
+            hr {
+                border: none;
+                height: 2px;
+                background-color: var(--ink);
+                margin: 30px 0;
+                border-radius: 1px;
+            }
+            .back-button {
+                display: inline-block;
+                padding: 10px 18px;
+                border-radius: 999px;
+                background-color: var(--lavender-200);
+                color: var(--ink);
+                text-decoration: none;
+                font-weight: 600;
+                border: 1px solid var(--lavender-300);
+                box-shadow: 0 3px 8px rgba(165, 139, 255, 0.2);
+                transition: background-color 0.2s ease, box-shadow 0.2s ease;
+            }
+            .back-button:hover {
+                background-color: var(--lavender-300);
+                box-shadow: 0 5px 12px rgba(165, 139, 255, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="Biography.html" class="back-button">Back</a><br></br>
+        <main>
+            <div class="container">
+                <img src="ScreenburnImage.png" />
+            </div>
+            <div class="center">
+                <h1>Screenburn</h1>
+            </div>
+            <p>
+                This project explores the intersection of cinematic experience and digital distraction through an interactive media installation built using p5.js and Arduino. Essentially, the piece plays cohesive edited movie clips while layering text notifications on top of the visual content. These notifications are triggered by the physical proximity of the viewer, measured using an Arduino proximity sensor. When a viewer approaches the sensor, the system responds by generating notifications more frequently and randomly all over the screen. As the viewer moves farther away, the interruptions slow or stop altogether. This interaction creates a reactive media environment that simulates the fractured attention many people experience while consuming media content.
+                <br>
+                </br>
+                The project ultimately serves as both a playful simulation and a critical commentary on the way modern media consumption is interrupted by reduced attention spans and technology. In this modern era of on-demand streaming and ever-growing technology everywhere, the experience of watching a film begins to fall apart and gets interrupted. Whether that is from checking text notifications to receive pop-up advertisements, many viewers do not engage with cinema in a focused and immersive way. By layering text notifications on top of a film and letting physical presence trigger more distractions, it shows how attention itself has become fractured. 
+                <br>
+                </br>
+                Please find the <a href="https://youtu.be/ahNk8eWPtq8?si=CEAB4Igd3T9IwG2F">video demonstration</a> below as well as various media files associated with this project <a href="https://drive.google.com/drive/u/0/folders/1vnUEJmKAH0KRBIoZSqIsyWPvRpkFxbch">HERE</a>.
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="ScreenburnVideo1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <br></br>
+
+            <hr>
+
+            <br></br>
+            <div class="container">
+                <img src="LullabyinLightImage.png" />
+            </div>
+            <div class="center">
+                <h1>Lullaby in Light</h1>
+            </div>
+            <p>
+                This project presents a reimagined music box that combines both visual art and music using an Arduino and a set of LEDs to evoke a dreamlike, sensory experience. Inspired by the emotional comfort music brings, the piece transforms that intangible feeling into a physical and interactive object. 
+                <br></br>
+                A pair of buttons allows users to toggle power and switch between two modes: Regular Mode and Dream Mode. Regular Mode plays a gentle lullaby accompanied by soft light patterns. In turn, Dream Mode plays a randomized track with changing LED patterns, depending on what track plays. These LED patterns are carefully choreographed across an RGB LED, a white LED, and a blue LED to simulate waves, breathing, starlight, and so on. The music is stored on a micro SD card and is read through a DFPlayer Mini module. Various technical challenges involved troubleshooting debouncing button inputs, Arduino module wiring, editing MP3 files, and designing the music box. The result is an intimate, artistic interface where sound and light interact to create a calming and immersive experience. This project is designed not only as a technical showcase but as a personal expression of how digital tools can be used to turn emotional themes into shared art.
+                <br></br>
+                Please find the <a href="https://youtu.be/TMljVubdiNg">video demonstration</a> below as well as various media files associated with this project <a href="https://drive.google.com/drive/u/0/folders/1Sd2sOVDOTWPQcskQjpwMXqpCUHiDZVEw">HERE</a>.
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="LullabyinLightVideo1.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </main>
+        <footer>
+            <p>©2025 Lorretta Lu</p>
+        </footer>
+    </body>
+</html>
