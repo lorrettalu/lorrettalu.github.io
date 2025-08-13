@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lorretta's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: "Times New Roman", sans-serif;
+        font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         margin: 50px;
+        padding: 48px 20px;
+      }
+      :root {
+        --lavender-100:#f6f4ff;
+        --lavender-200:#efe9ff;
+        --lavender-300:#e2d8ff;
+        --lavender-500:#41289c;
+        --ink:#2a2a34;
+        --card:#ffffff;
+        --ring:rgba(165, 139, 255, .3);
+        --radius: 18px;
+        --shadow: 0 10px 24px rgba(42, 42, 52, .12);
       }
       .container {
         display: flex;
@@ -21,12 +38,38 @@
       }
       .bio {
         max-width: 600px;
+        padding: 48px 20px;
+      }
+      .portfolio-button {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 1.4rem;
+        border-radius: 999px;
+        background-color: var(--lavender-200);
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid var(--lavender-300);
+        box-shadow: 0 4px 12px rgba(165, 139, 255, 0.25);
+        transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+      }
+      .portfolio-button:hover {
+        background-color: var(--lavender-300);
+        box-shadow: 0 5px 12px rgba(165, 139, 255, 0.3);
+        transform: translateY(-2px);
+      }
+      .portfolio-button:active {
+        transform: translateY(0);
+      }
+      .center {
+        text-align: center;
+        margin-top: 40px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="IMG_8499.JPG">
+      <img src="IMG_8499.jpg">
       <div class="bio">
     <h1>Welcome!</h1>
     <p>
@@ -34,5 +77,8 @@
     </p>
       </div>
     </div>
+    <a href="Portfolio.html" class="portfolio-button">Portfolio</a>
+    <br></br>
+    <script src="aisketch.js" class="center"></script>
   </body>
 </html>
