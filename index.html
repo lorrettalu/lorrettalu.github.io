@@ -68,12 +68,31 @@
       .sketch {
         border-radius: 10px;
       }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .social-links a img {
+        width: 36px;
+        height: 36px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .social-links a img:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(165, 139, 255, 0.4);
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <img src="IMG_8499.JPG">
-      <a href="https://www.linkedin.com/in/lorretta-lu-758441240/">LinkedIn</a><br></br>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/lorretta-lu-758441240/" target="_blank" aria-label="LinkedIn">
+            <img src="github-icon.png" alt="GitHub">
+          </a>
+        </div>
       <div class="bio">
         <h1>Welcome!</h1>
           <p>
