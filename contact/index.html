@@ -3,24 +3,28 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lorretta's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    
   </head>
   <style>
-    header1 {
-      position: sticky;
-      top: 0;
-      padding: 50px 10px;
+    h1 {
+        margin: 0 0 28px 0;
     }
-    .wrapp {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+    .label {
+        margin: 36px 0 14px;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
     }
   </style>
   <main>
@@ -28,7 +32,7 @@
       <header>
         <div class="wrap">
           <div class="brand">
-            <a href="index.html">Lorretta Lu</a>
+            <a href="../index.html">Lorretta Lu</a>
           </div>
           <button aria-controls="global-nav" aria-expanded="false">Menu</button>
           <nav id="global-nav" aria-expanded="false" aria-label="Primary">
@@ -41,12 +45,24 @@
         </div>
       </header>
       <br></br>
-      <header1 class="hero">
-        <h1>cozy stories in data and design, exploring music in interactive media</h1>
-      </header1>
-      <br></br>
-      <a href="portfolio" class="portfolio-button">Portfolio</a>
-      <br></br>
+      <div class="wrap">
+        <h1>Contact Lorretta</h1>
+      </div>
+      <div class="list">
+        <div class="item">
+            <div class="wrap">
+                <div class="social-links">
+                    LinkedIn
+                    <a href="https://www.linkedin.com/in/lorretta-lu-758441240/" target="_blank" aria-label="LinkedIn">
+                    <img src="../linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    GitHub<a href="https://github.com/lorrettalu" target="_blank" aria-label="GitHub">
+                    <img src="../github-mark.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
-  </main>
+    </main> 
 </html>
