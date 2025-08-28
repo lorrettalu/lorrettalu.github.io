@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <title>Screenburn</title>
+        <style>
+            body {
+                font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                margin: 0;
+                padding: 24px;
+                font: 16px/1.7;
+                background: var(--card);
+            }
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .hero {
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid #e6e6e6;
+            }
+            .meta {
+                color: #666;
+                margin: 8px 0 16px;
+            }
+            img, video {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="brand">
+                    <a href="../index.html">Lorretta Lu</a>
+                </div>
+                <button aria-controls="global-nav" aria-expanded="false">Menu</button>
+                <nav id="global-nav" aria-expanded="false" aria-label="Primary">
+                    <ul>
+                    <li><a href="/about/">About</a></li>
+                    <!--<li><a href="/portfolio/">Projects</a></li>-->
+                    <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+      </header>
+      <br/><br/>
+        <main>
+            <!--<a href="../index.html" class="back-button">Back</a>-->
+            <h1>Screenburn</h1>
+            <p class="meta">Arduino Visual Projection 2025</p>
+            <!--<hr>-->
+            <div class="hero">
+                <img src="../ScreenburnImage.png" alt="Screenburn Cover">
+            </div>
+            <p>
+                This project explores the intersection of cinematic experience and digital distraction through an interactive media installation built using p5.js and Arduino. Essentially, the piece plays cohesive edited movie clips while layering text notifications on top of the visual content. These notifications are triggered by the physical proximity of the viewer, measured using an Arduino proximity sensor. When a viewer approaches the sensor, the system responds by generating notifications more frequently and randomly all over the screen. As the viewer moves farther away, the interruptions slow or stop altogether. This interaction creates a reactive media environment that simulates the fractured attention many people experience while consuming media content.
+                <br/><br/>
+            </p>
+            <div class="hero" style="margin-top:12px;">
+                <video controls preload="metadata" poster="../ScreenburnImage.png">
+                    <source src="../ScreenburnVideo1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>
+                The project ultimately serves as both a playful simulation and a critical commentary on the way modern media consumption is interrupted by reduced attention spans and technology. In this modern era of on-demand streaming and ever-growing technology everywhere, the experience of watching a film begins to fall apart and gets interrupted. Whether that is from checking text notifications to receive pop-up advertisements, many viewers do not engage with cinema in a focused and immersive way. By layering text notifications on top of a film and letting physical presence trigger more distractions, it shows how attention itself has become fractured. 
+            </p>
+        </main>
+    </body>
+</html>

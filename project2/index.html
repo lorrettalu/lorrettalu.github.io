@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <title>Lullaby in Light</title>
+        <style>
+            body {
+                font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                margin: 0;
+                padding: 24px;
+                font: 16px/1.7;
+                background: var(--card);
+            }
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .hero {
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid #e6e6e6;
+            }
+            .meta {
+                color: #666;
+                margin: 8px 0 16px;
+            }
+            img, video {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="brand">
+                    <a href="../index.html">Lorretta Lu</a>
+                </div>
+                <button aria-controls="global-nav" aria-expanded="false">Menu</button>
+                <nav id="global-nav" aria-expanded="false" aria-label="Primary">
+                    <ul>
+                    <li><a href="/about/">About</a></li>
+                    <!--<li><a href="/portfolio/">Projects</a></li>-->
+                    <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+      </header>
+      <br></br>
+        </header>
+        <main>
+            <!--<a href="../index.html" class="back-button">Back</a>-->
+            <h1>Lullaby in Light</h1>
+            <p class="meta">Arduino Music Box 2025</p>
+            <!--<hr>-->
+            <div class="hero">
+                <img src="../LullabyinLightImage.png" alt="Lullaby in Light Cover">
+            </div>
+            <p>
+                This project presents a reimagined music box that combines both visual art and music using an Arduino and a set of LEDs to evoke a dreamlike, sensory experience. Inspired by the emotional comfort music brings, the piece transforms that intangible feeling into a physical and interactive object. 
+                <br/><br/>
+            </p>
+            <div class="hero" style="margin-top:12px;">
+                <video controls preload="metadata" poster="../LullabyinLightImage.png">
+                    <source src="../LullabyinLightVideo1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>
+               A pair of buttons allows users to toggle power and switch between two modes: Regular Mode and Dream Mode. Regular Mode plays a gentle lullaby accompanied by soft light patterns. In turn, Dream Mode plays a randomized track with changing LED patterns, depending on what track plays. These LED patterns are carefully choreographed across an RGB LED, a white LED, and a blue LED to simulate waves, breathing, starlight, and so on. The music is stored on a micro SD card and is read through a DFPlayer Mini module. Various technical challenges involved troubleshooting debouncing button inputs, Arduino module wiring, editing MP3 files, and designing the music box. The result is an intimate, artistic interface where sound and light interact to create a calming and immersive experience. This project is designed not only as a technical showcase but as a personal expression of how digital tools can be used to turn emotional themes into shared art. 
+            </p>
+            <div class="grid">
+                <img src="projectassets/concept.png" alt="Lullaby in Light Concept">
+                <img src="projectassets/inspiration.png" alt="Lullaby in Light Inspiration">
+                <img src="projectassets/process.png" alt="Lullaby in Light Process">
+            </div>
+            <br/>
+            <p>
+                The images below show the Arduino schematics for creating this music box.
+                The left image is the first prototype schematic. The right image is the final schematic.
+            </p>
+            <div class="grid">
+                <img src="projectassets/IMG_0314.PNG" alt="Lullaby in Light Prototype Schematic">
+                <img src="projectassets/IMG_0322.PNG" alt="Lullaby in Light Official Schematic">
+            </div>
+        </main>
+    </body>
+</html>

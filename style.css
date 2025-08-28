@@ -22,6 +22,10 @@ font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-
 margin: 50px;
 padding: 48px 20px;
 }
+body1 {
+    margin: 0;
+    font: 16px/1.6;
+}
 button {
 display: none;
 }
@@ -30,6 +34,8 @@ position: sticky;
 top: 0;
 border-bottom: 1px solid var(--ink);
 background-color: var(--card);
+z-index: 1;
+margin: 0;
 }
 main {
 max-width: 1050px;
@@ -53,6 +59,37 @@ list-style: none;
 --radius: 18px;
 --shadow: 0 10px 24px rgba(42, 42, 52, .12);
 }
+.back-button {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background-color: var(--lavender-200);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--lavender-300);
+    box-shadow: 0 3px 8px rgba(165, 139, 255, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.back-button:hover {
+    background-color: var(--lavender-300);
+    box-shadow: 0 5px 12px rgba(165, 139, 255, 0.3);
+}
+.card {
+    display: block;
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transform:scale(1.05);
+}
+.card:hover .thumb img {
+    transform:scale(1.05);
+}
+.card:hover .title {
+    color: var(--lavender-500);
+}
 .container {
 display: flex;
 align-items: center;
@@ -71,6 +108,13 @@ padding: 48px 20px;
 font-weight: 700;
 font-size: 25px;
 }
+.grid {
+    display: grid;
+    z-index: 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
+    margin: 0;
+}
 .hero {
     margin: 56px 0 34px;
     max-width: 900px;
@@ -81,6 +125,9 @@ font-size: 25px;
     line-height: 1.08;
     letter-spacing: .2px;
     font-weight: 700;
+}
+.meta {
+    margin-top: 10px;
 }
 .portfolio-button {
 display: inline-block;
@@ -125,6 +172,28 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
 .social-links a img:hover {
 transform: translateY(-3px);
 box-shadow: 0 4px 8px rgba(165, 139, 255, 0.4);
+}
+.subtitle {
+    margin: 0;
+    font-size: 0.95rem;
+}
+.thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.title {
+    margin: 0 0 4px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 .wrap {
 max-width: 1100px;

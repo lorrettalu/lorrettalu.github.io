@@ -9,22 +9,20 @@
     <title>Lorretta's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <style>
+      header1 {
+        top: 0;
+        padding: 50px 10px;
+      }
+      .wrapp {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 32px 20px 60px;
+      }
+    </style>
   </head>
-  <style>
-    header1 {
-      position: sticky;
-      top: 0;
-      padding: 50px 10px;
-    }
-    .wrapp {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-  </style>
-  <main>
-    <body>
+  <body>
+    <main>
       <header>
         <div class="wrap">
           <div class="brand">
@@ -34,19 +32,69 @@
           <nav id="global-nav" aria-expanded="false" aria-label="Primary">
             <ul>
               <li><a href="/about/">About</a></li>
-              <li><a href="/portfolio/">Projects</a></li>
+              <!--<li><a href="/portfolio/">Projects</a></li>-->
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <br></br>
+      <br/><br/>
       <header1 class="hero">
         <h1>cozy stories in data and design, exploring music in interactive media</h1>
       </header1>
-      <br></br>
-      <a href="portfolio" class="portfolio-button">Portfolio</a>
-      <br></br>
-    </body>
-  </main>
+      <br/>
+      <!--<a href="portfolio" class="portfolio-button">Portfolio</a>-->
+      <!--<br/><br/>-->
+      <br/><br/>
+      <div class="wrap">
+        <section class="grid">
+          <a href="project1/" class="card">
+            <div class="thumb">
+              <img src="ScreenburnImage.png" alt="Screenburn">
+            </div>
+            <div class="meta">
+              <h2 class="title">Screenburn</h2>
+              <p class="subtitle">arduino visual projection 2025</p>
+            </div>
+          </a>
+          <a href="project2/" class="card">
+            <div class="thumb">
+              <img src="LullabyinLightImage.png" alt="Lullaby in Light">
+            </div>
+            <div class="meta">
+              <h2 class="title">Lullaby in Light</h2>
+              <p class="subtitle">arduino music box 2025</p>
+            </div>
+          </a>
+          <a href="project3/" class="card">
+            <div class="thumb">
+              <img src="project3/assets/IMG_8337.JPG" alt="Mermaids and Myths">
+            </div>
+            <div class="meta">
+              <h2 class="title">Mermaids and Myths</h2>
+              <p class="subtitle">thematic digital photography 2025</p>
+            </div>
+          </a>
+          <a href="project4/" class="card">
+            <div class="thumb">
+              <img src="project4/image.png" alt="Choose a Job You Love">
+            </div>
+            <div class="meta">
+              <h2 class="title">Choose a Job You Love</h2>
+              <p class="subtitle">graphic design 2019</p>
+            </div>
+          </a>
+          <a href="project5/" class="card">
+            <div class="thumb">
+              <img src="project5/Iris Shiny Web App Cover.png" alt="Iris Shiny Web App Cover">
+            </div>
+            <div class="meta">
+              <h2 class="title">Iris Shiny Web App</h2>
+              <p class="subtitle">interactive data visualization 2024</p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
