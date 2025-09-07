@@ -105,6 +105,20 @@ margin-right: 30px;
 max-width: 600px;
 padding: 48px 20px;
 }
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        margin-top: 50px;
+    }
+}
 .brand {
 font-weight: 700;
 font-size: 25px;
